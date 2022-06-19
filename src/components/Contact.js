@@ -3,15 +3,15 @@
 import React from 'react';
 import './Contact.css';
 
-const Contact = ({photo, name,phone,email}) => {
+const Contact = (item) => {
     return (
         <div className='devFlex'>
             <section className='sectionFlex'>
-                <img className='photo' src = {photo}></img>
+                <img className='photo' src = {item.data.photo}></img>
                 <br/>
-                <span>{name}</span><br/>
-                <span>{phone}</span><br/>
-                <span>{email}</span>
+                <span>{item.data.name}</span><br/>
+                <span>{item.data.phone}</span><br/>
+                <span>{item.data.email}</span>
             </section>
         </div>
     )

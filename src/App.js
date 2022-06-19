@@ -12,7 +12,7 @@ const App = () => {
       <Header></Header>
       {dataContact.map((item) =>{
         return (
-          <Contact photo={item.photo} name={item.name} phone={item.phone} email={item.email}></Contact>
+          <Contact data={item}></Contact>
         )
       })}
     </div>
